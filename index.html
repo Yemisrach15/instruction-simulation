@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Instruction Cycle | Simulation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Basic Instruction Cycle Simulator</h1>
+
+        <div class="form">
+            <input type="number" name="num1" id="" placeholder="Number 1">
+            <span class="plus-sign">+</span>
+            <input type="number" name="num2" id="" placeholder="Number 2">
+            <button class="btn-go">Show steps</button>
+        </div>
+
+        <div class="process">
+            <div class="steps">
+                <section>
+                    <div>
+                        <h2>Memory</h2>
+                        <div class="boxes">
+                            <div>
+                                <p>300</p>
+                                <span>1940</span>
+                            </div>
+                            <div>
+                                <p>301</p>
+                                <span>5941</span>
+                            </div>
+                            <div>
+                                <p>302</p>
+                                <span>2941</span>
+                            </div>
+
+                            <div class="trail-dots">. . . .</div>
+
+                            <div>
+                                <p>940</p>
+                                <span>0003</span>
+                            </div>
+
+                            <div>
+                                <p>941</p>
+                                <span>0002</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2>CPU Registers</h2>
+                        <div class="boxes">
+                            <div>
+                                <span>301</span>
+                                <p>PC</p>
+                            </div>
+                            <div>
+                                <span>0003</span>
+                                <p>AC</p>
+                            </div>
+                            <div>
+                                <span>1940</span>
+                                <p>IR</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="info">
+                <h2>Opcodes</h2>
+                <div class="opcode">
+                    <p>0001</p>
+                    <p>Load AC from memory</p>
+                </div>
+                <div class="opcode">
+                    <p>0010</p>
+                    <p>Store AC to memory</p>
+                </div>
+                <div class="opcode">
+                    <p>0101</p>
+                    <p>Add to AC from memory</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
