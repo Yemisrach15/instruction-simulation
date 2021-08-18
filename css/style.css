@@ -100,3 +100,8 @@ section{
 .opcode p:first-child{
     border-right: 1px solid black;
 }
+
+.maybe-empty{
+    height: 26.375px;
+    min-width: 68.375px;
+}
