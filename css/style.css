@@ -71,10 +71,43 @@ h1{
 }
 
 section{
+    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    position: relative;
 }
+section::before{
+    content: '1';
+    background: rgb(85, 163, 223);
+    border-radius: 50%;
+    color: white;
+    left: -1.8em;
+    padding: 1em 1.2em;
+    position: absolute;
+    top: -1em;
+}
+.step-1::before{
+    content: '1';
+}
+.step-2::before{
+    content: '2';
+}
+.step-3::before{
+    content: '3';
+}
+.step-4::before{
+    content: '4';
+}
+.step-5::before{
+    content: '5';
+}
+.step-6::before{
+    content: '6';
+}
+
 
 .boxes > div{
     display: flex;

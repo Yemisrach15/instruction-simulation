@@ -17,7 +17,7 @@ function showSteps() {
     numbers = [num1Hex, num2Hex];
 
     // step 1
-    step = `<section>
+    step = `<section class="step-1">
                 <div>
                     <h2>Memory</h2>
                     <div class="boxes">
@@ -70,7 +70,7 @@ function showSteps() {
     // step 2
     registerValues[0] = '301';
     registerValues[1] = numbers[0];
-    step += `<section>
+    step += `<section  class="step-2">
                 <div>
                     <h2>Memory</h2>
                     <div class="boxes">
@@ -122,7 +122,7 @@ function showSteps() {
 
     // step 3
     registerValues[2] = instructions[1];
-    step += `<section>
+    step += `<section  class="step-3">
                 <div>
                     <h2>Memory</h2>
                     <div class="boxes">
@@ -175,7 +175,7 @@ function showSteps() {
     // step 4
     registerValues[0] = '302';
     registerValues[1] = dec2hex(Number(num1.value) + Number(num2.value));
-    step += `<section>
+    step += `<section  class="step-4">
                 <div>
                     <h2>Memory</h2>
                     <div class="boxes">
@@ -227,7 +227,7 @@ function showSteps() {
 
     // step 5
     registerValues[2] = instructions[2];
-    step += `<section>
+    step += `<section  class="step-5">
                 <div>
                     <h2>Memory</h2>
                     <div class="boxes">
@@ -280,7 +280,7 @@ function showSteps() {
     // step 6
     registerValues[0] = '303';
     numbers[1] = registerValues[1];
-    step += `<section>
+    step += `<section  class="step-6">
                 <div>
                     <h2>Memory</h2>
                     <div class="boxes">
