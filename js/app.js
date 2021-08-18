@@ -16,7 +16,271 @@ function showSteps() {
     num2Hex = dec2hex(Number(num2.value));
     numbers = [num1Hex, num2Hex];
 
+    // step 1
     step = `<section>
+                <div>
+                    <h2>Memory</h2>
+                    <div class="boxes">
+                        <div>
+                            <p>300</p>
+                            <span>1940</span>
+                        </div>
+                        <div>
+                            <p>301</p>
+                            <span>5941</span>
+                        </div>
+                        <div>
+                            <p>302</p>
+                            <span>2941</span>
+                        </div>
+
+                        <div class="trail-dots">. . . .</div>
+
+                        <div>
+                            <p>940</p>
+                            <span>${numbers[0]}</span>
+                        </div>
+
+                        <div>
+                            <p>941</p>
+                            <span>${numbers[1]}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>CPU Registers</h2>
+                    <div class="boxes">
+                        <div>
+                            <span>${registerValues[0]}</span>
+                            <p>PC</p>
+                        </div>
+                        <div>
+                            <span class="maybe-empty">${registerValues[1]}</span>
+                            <p>AC</p>
+                        </div>
+                        <div>
+                            <span>${registerValues[2]}</span>
+                            <p>IR</p>
+                        </div>
+                    </div>
+                </div>
+            </section>`;
+
+    // step 2
+    registerValues[0] = '301';
+    registerValues[1] = numbers[0];
+    step += `<section>
+                <div>
+                    <h2>Memory</h2>
+                    <div class="boxes">
+                        <div>
+                            <p>300</p>
+                            <span>1940</span>
+                        </div>
+                        <div>
+                            <p>301</p>
+                            <span>5941</span>
+                        </div>
+                        <div>
+                            <p>302</p>
+                            <span>2941</span>
+                        </div>
+
+                        <div class="trail-dots">. . . .</div>
+
+                        <div>
+                            <p>940</p>
+                            <span>${numbers[0]}</span>
+                        </div>
+
+                        <div>
+                            <p>941</p>
+                            <span>${numbers[1]}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>CPU Registers</h2>
+                    <div class="boxes">
+                        <div>
+                            <span>${registerValues[0]}</span>
+                            <p>PC</p>
+                        </div>
+                        <div>
+                            <span class="maybe-empty">${registerValues[1]}</span>
+                            <p>AC</p>
+                        </div>
+                        <div>
+                            <span>${registerValues[2]}</span>
+                            <p>IR</p>
+                        </div>
+                    </div>
+                </div>
+            </section>`;
+
+    // step 3
+    registerValues[2] = instructions[1];
+    step += `<section>
+                <div>
+                    <h2>Memory</h2>
+                    <div class="boxes">
+                        <div>
+                            <p>300</p>
+                            <span>1940</span>
+                        </div>
+                        <div>
+                            <p>301</p>
+                            <span>5941</span>
+                        </div>
+                        <div>
+                            <p>302</p>
+                            <span>2941</span>
+                        </div>
+
+                        <div class="trail-dots">. . . .</div>
+
+                        <div>
+                            <p>940</p>
+                            <span>${numbers[0]}</span>
+                        </div>
+
+                        <div>
+                            <p>941</p>
+                            <span>${numbers[1]}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>CPU Registers</h2>
+                    <div class="boxes">
+                        <div>
+                            <span>${registerValues[0]}</span>
+                            <p>PC</p>
+                        </div>
+                        <div>
+                            <span class="maybe-empty">${registerValues[1]}</span>
+                            <p>AC</p>
+                        </div>
+                        <div>
+                            <span>${registerValues[2]}</span>
+                            <p>IR</p>
+                        </div>
+                    </div>
+                </div>
+            </section>`;
+
+    // step 4
+    registerValues[0] = '302';
+    registerValues[1] = dec2hex(Number(num1.value) + Number(num2.value));
+    step += `<section>
+                <div>
+                    <h2>Memory</h2>
+                    <div class="boxes">
+                        <div>
+                            <p>300</p>
+                            <span>1940</span>
+                        </div>
+                        <div>
+                            <p>301</p>
+                            <span>5941</span>
+                        </div>
+                        <div>
+                            <p>302</p>
+                            <span>2941</span>
+                        </div>
+
+                        <div class="trail-dots">. . . .</div>
+
+                        <div>
+                            <p>940</p>
+                            <span>${numbers[0]}</span>
+                        </div>
+
+                        <div>
+                            <p>941</p>
+                            <span>${numbers[1]}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>CPU Registers</h2>
+                    <div class="boxes">
+                        <div>
+                            <span>${registerValues[0]}</span>
+                            <p>PC</p>
+                        </div>
+                        <div>
+                            <span class="maybe-empty">${registerValues[1]}</span>
+                            <p>AC</p>
+                        </div>
+                        <div>
+                            <span>${registerValues[2]}</span>
+                            <p>IR</p>
+                        </div>
+                    </div>
+                </div>
+            </section>`;
+
+    // step 5
+    registerValues[2] = instructions[2];
+    step += `<section>
+                <div>
+                    <h2>Memory</h2>
+                    <div class="boxes">
+                        <div>
+                            <p>300</p>
+                            <span>1940</span>
+                        </div>
+                        <div>
+                            <p>301</p>
+                            <span>5941</span>
+                        </div>
+                        <div>
+                            <p>302</p>
+                            <span>2941</span>
+                        </div>
+
+                        <div class="trail-dots">. . . .</div>
+
+                        <div>
+                            <p>940</p>
+                            <span>${numbers[0]}</span>
+                        </div>
+
+                        <div>
+                            <p>941</p>
+                            <span>${numbers[1]}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>CPU Registers</h2>
+                    <div class="boxes">
+                        <div>
+                            <span>${registerValues[0]}</span>
+                            <p>PC</p>
+                        </div>
+                        <div>
+                            <span class="maybe-empty">${registerValues[1]}</span>
+                            <p>AC</p>
+                        </div>
+                        <div>
+                            <span>${registerValues[2]}</span>
+                            <p>IR</p>
+                        </div>
+                    </div>
+                </div>
+            </section>`;
+
+    // step 6
+    registerValues[0] = '303';
+    numbers[1] = registerValues[1];
+    step += `<section>
                 <div>
                     <h2>Memory</h2>
                     <div class="boxes">
